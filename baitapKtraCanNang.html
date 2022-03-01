@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="canNang">
+<input type="number" id="chieuCao">
+<button onclick="bmi()">Kiem Tra BMI</button>
+</body>
+
+<script>
+    function bmi() {
+        let a = +document.getElementById('canNang').value;
+        let b = +document.getElementById('chieuCao').value;
+        let bmi = a / (b ^ 2);
+
+        if (bmi < 18)
+            document.write("Underweight");
+        else if (bmi < 25.0)
+            document.write("Normal");
+        else if (bmi < 30.0)
+            document.write("Overweight");
+        else
+            document.write("Obese");
+
+    }
+</script>
+</html>

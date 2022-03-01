@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyen = parseInt(prompt("Nhap so cac so nguyen can in: "));
+    let count = 0;
+    let n = 2;
+    for (n; count < soNguyen; n++) {
+        console.log('n -=-=-=-=-=-=-=-=-=-', n);
+        let check = true;
+        for (let j = 2; j < n; j++) {
+            if (n % j == 0) {
+                console.log('n trong if ================', n)
+                console.log('j trong if ----------------', j)
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            count++;
+            document.write(n + ' ');
+        }
+    }
+</script>
+
+</body>
+</html>
