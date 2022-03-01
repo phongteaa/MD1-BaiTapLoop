@@ -6,13 +6,51 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i < 100; i++) {
-        document.write(i + " ")
-        if (i === 99) {
-            document.write("Chuong trinh ket thuc");
-            break;
+    /*    for (let i = 1; i < 100; i++) {
+            document.write(i + " ")
+            if (i === 99) {
+                document.write("Chuong trinh ket thuc");
+                break;
+            }
         }
+        let a = parseInt(prompt("Nhap chieu dai: "));
+        let b = parseInt(prompt("Nhap chieu rong: "));
+        for (let i = 1; i <= b; i++) {
+            for (let j = 1; j <= a; j++) {
+                document.write("*");
+            }
+            document.write("<br>")
+        }*/
+    /*
+        let rs = "";
+        for (let i = 5; i >= 0; i--) {
+            for (let j = 0; j <= i; j++) {
+                rs += "*";
+            }
+            rs += "<br>";
+        }
+        document.write(rs);*/
+
+    // let rs = "";
+    // for (let i = 0; i < 5; i++) {
+    //     for (let j = 0; j <= i; j++) {
+    //         rs += "*";
+    //     }
+    //     rs += "<br>";
+    // }
+    // document.write(rs);
+
+    for (let i = 5; i >0; i--) {
+        for (let j = 5; j >i; j--) {
+            document.write('&nbsp;&nbsp');
+
+        }
+        for (let k = 1; k <= i; k++) {
+            document.write("*");
+        }
+        document.write('<br>');
     }
+
 </script>
 </body>
 </html>
